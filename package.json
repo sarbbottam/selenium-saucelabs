@@ -5,7 +5,8 @@
   "description": "selenium testing from travis at saucelabs using protractor, mocha and chai",
   "scripts": {
     "test": "./node_modules/.bin/protractor protractor.conf.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "./node_modules/.bin/webdriver-manager update"
   },
   "keywords": [
     "travis",
